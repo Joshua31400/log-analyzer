@@ -14,7 +14,7 @@ func StartServer() {
 	http.HandleFunc("/upload", UploadHandler)
 	http.HandleFunc("/stats", StatsHandler)
 
-	fmt.Println("Server is running on http://localhost:8080")
+	fmt.Println("Server is running on http://localhost:8080" + "\nPress Ctrl+C to stop the server")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatal("Error starting server:", err)
