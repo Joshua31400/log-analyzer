@@ -1,23 +1,10 @@
 package parser
 
 import (
-	"fmt"
 	"log"
 	"log-analyzer/internal/stats"
 	"log-analyzer/pkg/fileutils"
 )
-
-func TestReaderFile() {
-	filename := "test.txt"
-	lines, err := fileutils.ReadLinesInRange(filename)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	for _, line := range lines {
-		fmt.Println(line)
-	}
-}
 
 func TestStatisticsCounter() *stats.Statistics {
 	filename := "test.txt"

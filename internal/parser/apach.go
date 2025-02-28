@@ -13,8 +13,8 @@ func ApachParseLine(log string) (string, string, string, string, error) {
 	matches := re.FindStringSubmatch(log)
 
 	if len(matches) == 0 {
-		fmt.Println("Log ne correspond pas au format attendu:", log)
-		return "", "", "", "", fmt.Errorf("format de log Apache invalide")
+		fmt.Println("Log dont fit with the file format:", log)
+		return "", "", "", "", fmt.Errorf("Invalid apache log format")
 	}
 
 	ip := matches[1]
