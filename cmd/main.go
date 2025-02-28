@@ -7,5 +7,6 @@ import (
 
 func main() {
 	fmt.Println("Welcome to Log Analyzer")
-	parser.TestFile()
+	parser.TestReaderFile()
+	parser.TestStatisticsCounter().DisplayStatistics()
 }
