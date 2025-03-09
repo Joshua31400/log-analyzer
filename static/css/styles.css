@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+#drop-area{
+    border: 2px dashed #ffb6ff;
+    border-radius: 20px;
+    width: 480px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+}
+

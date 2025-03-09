@@ -2,10 +2,10 @@ package main
 
 import (
 	"log-analyzer/internal/analyzer"
-	"log-analyzer/internal/web"
+	server "log-analyzer/internal/web/server"
 )
 
 func main() {
-	web.StartServer()
+	server.StartServer()
 	analyzer.Run()
 }
